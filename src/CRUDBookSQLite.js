@@ -79,7 +79,11 @@ app.delete('/books/:id' , (req, res) => {
         if (err) {
             res.status(500).send(err);
         } else {
-            res.send({});
+            if (!row) {
+            res.status(404).send('Book not found');
+            } else {
+                res.json(row);
+            }
         }
     });
 });
