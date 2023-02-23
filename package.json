@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev":   "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
     "format": "prettier --write *.js"
   },
   "keywords": [],
@@ -14,7 +14,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "sqlite3": "5.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
